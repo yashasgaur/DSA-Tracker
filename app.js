@@ -72,6 +72,25 @@
     return { label: "Link", cls: "other" };
   }
 
+  function renderLinks(q) {
+    const badges = [];
+    if (q.url) {
+      const p = getPlatform(q.url);
+      badges.push(
+        `<a href="${q.url}" target="_blank" rel="noopener" class="link-badge ${p.cls}" onclick="event.stopPropagation()">${p.label}</a>`,
+      );
+    }
+    if (q.lcUrl) {
+      badges.push(
+        `<a href="${q.lcUrl}" target="_blank" rel="noopener" class="link-badge lc" onclick="event.stopPropagation()">LC</a>`,
+      );
+    }
+    if (badges.length === 0) {
+      badges.push(`<span class="link-badge other">Theory</span>`);
+    }
+    return badges.join(" ");
+  }
+
   function getTodayStr() {
     return new Date().toISOString().split("T")[0];
   }
@@ -256,8 +275,6 @@
                   const isDone = state.done.has(qId);
                   const isBookmarked = state.bookmarks.has(qId);
                   const hasNotes = !!state.notes[qId];
-                  const platform = getPlatform(q.url);
-
                   return `
                   <tr class="${isDone ? "done" : ""}" data-qid="${qId}">
                     <td class="q-checkbox">
@@ -268,11 +285,8 @@
                     </td>
                     <td class="q-number">${q.qIdx + 1}</td>
                     <td class="q-name">
-                      ${
-                        q.url
-                          ? `<a href="${q.url}" target="_blank" rel="noopener">${q.name} <span class="link-badge ${platform.cls}">${platform.label}</span></a>`
-                          : `${q.name} <span class="link-badge ${platform.cls}">${platform.label}</span>`
-                      }
+                      ${q.name}
+                      <span class="q-links">${renderLinks(q)}</span>
                     </td>
                     <td>
                       <div class="q-actions">
@@ -401,14 +415,12 @@
     matches.slice(0, 20).forEach((m) => {
       const qId = getQuestionId(m.tIdx, m.qIdx);
       const isDone = state.done.has(qId);
-      const platform = getPlatform(m.url);
-
       const item = document.createElement("div");
       item.className = "search-result-item";
       item.innerHTML = `
         <span class="search-result-topic">${m.icon} ${m.topic}</span>
         <span class="search-result-name">${isDone ? "✅ " : ""}${m.name}</span>
-        <span class="search-result-badge"><span class="link-badge ${platform.cls}">${platform.label}</span></span>
+        <span class="search-result-badge">${renderLinks(m)}</span>
       `;
       item.addEventListener("click", () => {
         overlay.classList.remove("active");

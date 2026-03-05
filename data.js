@@ -19,10 +19,12 @@ const DSA_DATA = [
       {
         name: 'Find the "Kth" max and min element of an array',
         url: "https://practice.geeksforgeeks.org/problems/kth-smallest-element/0",
+        lcUrl: "https://leetcode.com/problems/kth-largest-element-in-an-array/",
       },
       {
         name: "Sort an array of 0s, 1s and 2s without sorting algo",
         url: "https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s/0",
+        lcUrl: "https://leetcode.com/problems/sort-colors/",
       },
       {
         name: "Move all negative elements to one side of the array",
@@ -39,6 +41,7 @@ const DSA_DATA = [
       {
         name: "Largest sum contiguous Subarray [Kadane's Algo]",
         url: "https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0",
+        lcUrl: "https://leetcode.com/problems/maximum-subarray/",
       },
       {
         name: "Minimise the maximum difference between heights",
@@ -47,6 +50,7 @@ const DSA_DATA = [
       {
         name: "Minimum no. of Jumps to reach end of an array",
         url: "https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0",
+        lcUrl: "https://leetcode.com/problems/jump-game-ii/",
       },
       {
         name: "Find duplicate in an array of N+1 Integers",
@@ -55,10 +59,12 @@ const DSA_DATA = [
       {
         name: "Merge 2 sorted arrays without using extra space",
         url: "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1",
+        lcUrl: "https://leetcode.com/problems/merge-sorted-array/",
       },
       {
         name: "Kadane's Algorithm [V.V.V.V.V IMP]",
         url: "https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0",
+        lcUrl: "https://leetcode.com/problems/maximum-subarray/",
       },
       {
         name: "Merge Intervals",
@@ -99,10 +105,12 @@ const DSA_DATA = [
       {
         name: "Find maximum product subarray",
         url: "https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1",
+        lcUrl: "https://leetcode.com/problems/maximum-product-subarray/",
       },
       {
         name: "Find longest consecutive subsequence",
         url: "https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence/0",
+        lcUrl: "https://leetcode.com/problems/longest-consecutive-sequence/",
       },
       {
         name: "Find elements appearing more than n/k times",
@@ -111,6 +119,7 @@ const DSA_DATA = [
       {
         name: "Maximum profit by buying and selling a share at most twice",
         url: "https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/",
+        lcUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
       },
       {
         name: "Find whether an array is a subset of another array",
@@ -123,6 +132,7 @@ const DSA_DATA = [
       {
         name: "Trapping Rain Water",
         url: "https://practice.geeksforgeeks.org/problems/trapping-rain-water/0",
+        lcUrl: "https://leetcode.com/problems/trapping-rain-water/",
       },
       {
         name: "Chocolate Distribution Problem",
@@ -131,6 +141,7 @@ const DSA_DATA = [
       {
         name: "Smallest subarray with sum greater than given value",
         url: "https://practice.geeksforgeeks.org/problems/smallest-subarray-with-sum-greater-than-x/0",
+        lcUrl: "https://leetcode.com/problems/minimum-size-subarray-sum/",
       },
       {
         name: "Three way partitioning of an array around a given value",
@@ -151,6 +162,7 @@ const DSA_DATA = [
       {
         name: "Median of 2 sorted arrays of different size",
         url: "https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/",
+        lcUrl: "https://leetcode.com/problems/median-of-two-sorted-arrays/",
       },
     ],
   },
@@ -161,6 +173,7 @@ const DSA_DATA = [
       {
         name: "Spiral traversal on a Matrix",
         url: "https://practice.geeksforgeeks.org/problems/spirally-traversing-a-matrix/0",
+        lcUrl: "https://leetcode.com/problems/spiral-matrix/",
       },
       {
         name: "Search an element in a matrix",
@@ -181,6 +194,7 @@ const DSA_DATA = [
       {
         name: "Maximum size rectangle",
         url: "https://practice.geeksforgeeks.org/problems/max-rectangle/1",
+        lcUrl: "https://leetcode.com/problems/maximal-rectangle/",
       },
       {
         name: "Find a specific pair in matrix",
@@ -189,10 +203,12 @@ const DSA_DATA = [
       {
         name: "Rotate matrix by 90 degrees",
         url: "https://www.geeksforgeeks.org/rotate-a-matrix-by-90-degree-in-clockwise-direction-without-using-any-extra-space/",
+        lcUrl: "https://leetcode.com/problems/rotate-image/",
       },
       {
         name: "Kth smallest element in a row-column wise sorted matrix",
         url: "https://practice.geeksforgeeks.org/problems/kth-element-in-matrix/1",
+        lcUrl: "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/",
       },
       {
         name: "Common elements in all rows of a given matrix",
@@ -211,6 +227,7 @@ const DSA_DATA = [
       {
         name: "Check whether a String is Palindrome or not",
         url: "https://practice.geeksforgeeks.org/problems/palindrome-string0817/1",
+        lcUrl: "https://leetcode.com/problems/valid-palindrome/",
       },
       {
         name: "Find Duplicate characters in a string",
@@ -232,6 +249,7 @@ const DSA_DATA = [
       {
         name: "Longest Palindromic Substring",
         url: "https://practice.geeksforgeeks.org/problems/longest-palindrome-in-a-string/0",
+        lcUrl: "https://leetcode.com/problems/longest-palindromic-substring/",
       },
       {
         name: "Find Longest Recurring Subsequence in String",
@@ -244,6 +262,7 @@ const DSA_DATA = [
       {
         name: "Print all permutations of a given string",
         url: "https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0",
+        lcUrl: "https://leetcode.com/problems/permutations/",
       },
       {
         name: "Split Binary string into substrings with equal 0's and 1's",
@@ -256,18 +275,22 @@ const DSA_DATA = [
       {
         name: "EDIT Distance [Very Imp]",
         url: "https://practice.geeksforgeeks.org/problems/edit-distance3702/1",
+        lcUrl: "https://leetcode.com/problems/edit-distance/",
       },
       {
         name: "Find next greater number with same set of digits [V.V IMP]",
         url: "https://practice.geeksforgeeks.org/problems/next-permutation/0",
+        lcUrl: "https://leetcode.com/problems/next-permutation/",
       },
       {
         name: "Balanced Parenthesis problem [Imp]",
         url: "https://practice.geeksforgeeks.org/problems/parenthesis-checker/0",
+        lcUrl: "https://leetcode.com/problems/valid-parentheses/",
       },
       {
         name: "Word Break Problem [Very Imp]",
         url: "https://practice.geeksforgeeks.org/problems/word-break/0",
+        lcUrl: "https://leetcode.com/problems/word-break/",
       },
       {
         name: "Rabin Karp Algorithm",
@@ -288,6 +311,7 @@ const DSA_DATA = [
       {
         name: "Count All Palindromic Subsequence in a given String",
         url: "https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1",
+        lcUrl: "https://leetcode.com/problems/count-different-palindromic-subsequences/",
       },
       {
         name: "Count of given string in 2D character array",
@@ -304,6 +328,7 @@ const DSA_DATA = [
       {
         name: "Converting Roman Numerals to Decimal",
         url: "https://practice.geeksforgeeks.org/problems/roman-number-to-integer/0",
+        lcUrl: "https://leetcode.com/problems/roman-to-integer/",
       },
       {
         name: "Longest Common Prefix",
@@ -324,10 +349,12 @@ const DSA_DATA = [
       {
         name: "Find the longest common subsequence between two strings",
         url: "https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0",
+        lcUrl: "https://leetcode.com/problems/longest-common-subsequence/",
       },
       {
         name: "Generate all possible valid IP addresses from given string",
         url: "https://practice.geeksforgeeks.org/problems/generate-ip-addresses/1",
+        lcUrl: "https://leetcode.com/problems/restore-ip-addresses/",
       },
       {
         name: "Smallest window containing all characters of string itself",
@@ -336,10 +363,12 @@ const DSA_DATA = [
       {
         name: "Rearrange characters so no two adjacent are same",
         url: "https://practice.geeksforgeeks.org/problems/rearrange-characters/0",
+        lcUrl: "https://leetcode.com/problems/reorganize-string/",
       },
       {
         name: "Minimum characters to add at front to make string palindrome",
         url: "https://www.geeksforgeeks.org/minimum-characters-added-front-make-string-palindrome/",
+        lcUrl: "https://leetcode.com/problems/shortest-palindrome/",
       },
       {
         name: "Print all anagrams together",
@@ -348,14 +377,17 @@ const DSA_DATA = [
       {
         name: "Smallest window containing all characters of another string",
         url: "https://practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string/0",
+        lcUrl: "https://leetcode.com/problems/minimum-window-substring/",
       },
       {
         name: "Recursively remove all adjacent duplicates",
         url: "https://practice.geeksforgeeks.org/problems/consecutive-elements/0",
+        lcUrl: "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
       },
       {
         name: "String matching with wildcard characters",
         url: "https://practice.geeksforgeeks.org/problems/wildcard-string-matching/0",
+        lcUrl: "https://leetcode.com/problems/wildcard-matching/",
       },
       {
         name: "Number of customers who could not get a computer",
@@ -368,6 +400,7 @@ const DSA_DATA = [
       {
         name: "Check if two strings are isomorphic",
         url: "https://practice.geeksforgeeks.org/problems/isomorphic-strings/0",
+        lcUrl: "https://leetcode.com/problems/isomorphic-strings/",
       },
       {
         name: "Recursively print all sentences from list of word lists",
@@ -382,6 +415,7 @@ const DSA_DATA = [
       {
         name: "Find first and last positions of element in sorted array",
         url: "https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x/0",
+        lcUrl: "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
       },
       {
         name: "Find a Fixed Point (Value equal to index)",
@@ -394,6 +428,7 @@ const DSA_DATA = [
       {
         name: "Square root of an integer",
         url: "https://practice.geeksforgeeks.org/problems/square-root/1",
+        lcUrl: "https://leetcode.com/problems/sqrtx/",
       },
       {
         name: "Maximum and minimum using minimum comparisons",
@@ -410,6 +445,7 @@ const DSA_DATA = [
       {
         name: "Find majority element",
         url: "https://practice.geeksforgeeks.org/problems/majority-element/0",
+        lcUrl: "https://leetcode.com/problems/majority-element/",
       },
       {
         name: "Searching in array where adjacent differ by at most k",
@@ -422,10 +458,12 @@ const DSA_DATA = [
       {
         name: "Find four elements that sum to a given value",
         url: "https://practice.geeksforgeeks.org/problems/find-all-four-sum-numbers/0",
+        lcUrl: "https://leetcode.com/problems/4sum/",
       },
       {
         name: "Maximum sum such that no 2 elements are adjacent",
         url: "https://practice.geeksforgeeks.org/problems/stickler-theif/0",
+        lcUrl: "https://leetcode.com/problems/house-robber/",
       },
       {
         name: "Count triplets with sum smaller than given value",
@@ -434,6 +472,7 @@ const DSA_DATA = [
       {
         name: "Merge 2 sorted arrays",
         url: "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays5135/1",
+        lcUrl: "https://leetcode.com/problems/merge-sorted-array/",
       },
       {
         name: "Print all subarrays with 0 sum",
@@ -442,6 +481,7 @@ const DSA_DATA = [
       {
         name: "Product array Puzzle",
         url: "https://practice.geeksforgeeks.org/problems/product-array-puzzle/0",
+        lcUrl: "https://leetcode.com/problems/product-of-array-except-self/",
       },
       {
         name: "Sort array according to count of set bits",
@@ -523,14 +563,17 @@ const DSA_DATA = [
       {
         name: "Reverse the Linked List (Iterative and Recursive)",
         url: "https://www.geeksforgeeks.org/reverse-a-linked-list/",
+        lcUrl: "https://leetcode.com/problems/reverse-linked-list/",
       },
       {
         name: "Reverse a Linked List in groups of given size [V.Imp]",
         url: "https://practice.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1",
+        lcUrl: "https://leetcode.com/problems/reverse-nodes-in-k-group/",
       },
       {
         name: "Detect loop in a linked list",
         url: "https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1",
+        lcUrl: "https://leetcode.com/problems/linked-list-cycle/",
       },
       {
         name: "Delete loop in a linked list",
@@ -539,10 +582,12 @@ const DSA_DATA = [
       {
         name: "Find the starting point of the loop",
         url: "https://www.geeksforgeeks.org/find-first-node-of-loop-in-a-linked-list/",
+        lcUrl: "https://leetcode.com/problems/linked-list-cycle-ii/",
       },
       {
         name: "Remove Duplicates in a sorted Linked List",
         url: "https://practice.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1",
+        lcUrl: "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
       },
       {
         name: "Remove Duplicates in an Un-sorted Linked List",
@@ -559,6 +604,7 @@ const DSA_DATA = [
       {
         name: "Add two numbers represented by linked lists",
         url: "https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1",
+        lcUrl: "https://leetcode.com/problems/add-two-numbers/",
       },
       {
         name: "Intersection of two Sorted Linked Lists",
@@ -567,10 +613,12 @@ const DSA_DATA = [
       {
         name: "Intersection Point of two Linked Lists",
         url: "https://practice.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1",
+        lcUrl: "https://leetcode.com/problems/intersection-of-two-linked-lists/",
       },
       {
         name: "Merge Sort for Linked Lists [V. Important]",
         url: "https://practice.geeksforgeeks.org/problems/sort-a-linked-list/1",
+        lcUrl: "https://leetcode.com/problems/sort-list/",
       },
       {
         name: "Quicksort for Linked Lists [V. Important]",
@@ -591,6 +639,7 @@ const DSA_DATA = [
       {
         name: "Check if Singly Linked list is a palindrome",
         url: "https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1",
+        lcUrl: "https://leetcode.com/problems/palindrome-linked-list/",
       },
       {
         name: "Deletion from a Circular Linked List",
@@ -636,10 +685,12 @@ const DSA_DATA = [
       {
         name: "Clone a linked list with next and random pointer",
         url: "https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1",
+        lcUrl: "https://leetcode.com/problems/copy-list-with-random-pointer/",
       },
       {
         name: "Merge K sorted linked lists",
         url: "https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1",
+        lcUrl: "https://leetcode.com/problems/merge-k-sorted-lists/",
       },
       {
         name: "Multiply 2 numbers represented by LL",
@@ -652,6 +703,7 @@ const DSA_DATA = [
       {
         name: "Segregate even and odd nodes in a Linked List",
         url: "https://practice.geeksforgeeks.org/problems/segregate-even-and-odd-nodes-in-a-linked-list/0",
+        lcUrl: "https://leetcode.com/problems/odd-even-linked-list/",
       },
       {
         name: "N'th node from the end of a Linked List",
@@ -670,22 +722,27 @@ const DSA_DATA = [
       {
         name: "Level order traversal",
         url: "https://practice.geeksforgeeks.org/problems/level-order-traversal/1",
+        lcUrl: "https://leetcode.com/problems/binary-tree-level-order-traversal/",
       },
       {
         name: "Reverse Level Order traversal",
         url: "https://practice.geeksforgeeks.org/problems/reverse-level-order-traversal/1",
+        lcUrl: "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/",
       },
       {
         name: "Height of a tree",
         url: "https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1",
+        lcUrl: "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
       },
       {
         name: "Diameter of a tree",
         url: "https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1",
+        lcUrl: "https://leetcode.com/problems/diameter-of-binary-tree/",
       },
       {
         name: "Mirror of a tree",
         url: "https://www.geeksforgeeks.org/create-a-mirror-tree-from-the-given-binary-tree/",
+        lcUrl: "https://leetcode.com/problems/invert-binary-tree/",
       },
       {
         name: "Inorder Traversal (Iterative and Recursive)",
@@ -706,6 +763,7 @@ const DSA_DATA = [
       {
         name: "Right View of a tree",
         url: "https://practice.geeksforgeeks.org/problems/right-view-of-binary-tree/1",
+        lcUrl: "https://leetcode.com/problems/binary-tree-right-side-view/",
       },
       {
         name: "Top View of a tree",
@@ -718,10 +776,12 @@ const DSA_DATA = [
       {
         name: "Zig-Zag traversal of a binary tree",
         url: "https://practice.geeksforgeeks.org/problems/zigzag-tree-traversal/1",
+        lcUrl: "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
       },
       {
         name: "Check if a tree is balanced or not",
         url: "https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1",
+        lcUrl: "https://leetcode.com/problems/balanced-binary-tree/",
       },
       {
         name: "Diagonal Traversal of a Binary tree",
@@ -746,6 +806,7 @@ const DSA_DATA = [
       {
         name: "Construct Binary tree from Inorder and Preorder traversal",
         url: "https://practice.geeksforgeeks.org/problems/construct-tree-1/1",
+        lcUrl: "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
       },
       {
         name: "Find minimum swaps to convert Binary tree into BST",
@@ -762,6 +823,7 @@ const DSA_DATA = [
       {
         name: "Check if Binary Tree contains duplicate subtrees of size 2+",
         url: "https://practice.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1",
+        lcUrl: "https://leetcode.com/problems/find-duplicate-subtrees/",
       },
       {
         name: "Check if 2 trees are mirror or not",
@@ -782,14 +844,17 @@ const DSA_DATA = [
       {
         name: "Maximum Sum of nodes such that no two are adjacent",
         url: "https://www.geeksforgeeks.org/maximum-sum-nodes-binary-tree-no-two-adjacent/",
+        lcUrl: "https://leetcode.com/problems/house-robber-iii/",
       },
       {
         name: "Print all K Sum paths in a Binary tree",
         url: "https://www.geeksforgeeks.org/print-k-sum-paths-binary-tree/",
+        lcUrl: "https://leetcode.com/problems/path-sum-iii/",
       },
       {
         name: "Find LCA in a Binary tree",
         url: "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1",
+        lcUrl: "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
       },
       {
         name: "Find distance between 2 nodes in a Binary tree",
@@ -802,6 +867,7 @@ const DSA_DATA = [
       {
         name: "Find all Duplicate subtrees in a Binary tree [IMP]",
         url: "https://practice.geeksforgeeks.org/problems/duplicate-subtrees/1",
+        lcUrl: "https://leetcode.com/problems/find-duplicate-subtrees/",
       },
       {
         name: "Tree Isomorphism Problem",
@@ -816,6 +882,7 @@ const DSA_DATA = [
       {
         name: "Find a value in a BST",
         url: "https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/",
+        lcUrl: "https://leetcode.com/problems/search-in-a-binary-search-tree/",
       },
       {
         name: "Deletion of a node in a BST",
@@ -832,6 +899,7 @@ const DSA_DATA = [
       {
         name: "Check if a tree is a BST or not",
         url: "https://practice.geeksforgeeks.org/problems/check-for-bst/1",
+        lcUrl: "https://leetcode.com/problems/validate-binary-search-tree/",
       },
       {
         name: "Populate Inorder successor of all nodes",
@@ -840,10 +908,12 @@ const DSA_DATA = [
       {
         name: "Find LCA of 2 nodes in a BST",
         url: "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1",
+        lcUrl: "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
       },
       {
         name: "Construct BST from preorder traversal",
         url: "https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversa/",
+        lcUrl: "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
       },
       {
         name: "Convert Binary tree into BST",
@@ -852,6 +922,7 @@ const DSA_DATA = [
       {
         name: "Convert a normal BST into a Balanced BST",
         url: "https://www.geeksforgeeks.org/convert-normal-bst-balanced-bst/",
+        lcUrl: "https://leetcode.com/problems/balance-a-binary-search-tree/",
       },
       {
         name: "Merge two BST [V.V.V IMP]",
@@ -864,6 +935,7 @@ const DSA_DATA = [
       {
         name: "Find Kth smallest element in a BST",
         url: "https://practice.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1",
+        lcUrl: "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
       },
       {
         name: "Count pairs from 2 BST whose sum equals X",
@@ -1042,6 +1114,7 @@ const DSA_DATA = [
       {
         name: "Rearrange characters so no two adjacent are same",
         url: "https://practice.geeksforgeeks.org/problems/rearrange-characters/0",
+        lcUrl: "https://leetcode.com/problems/reorganize-string/",
       },
       {
         name: "Find maximum sum possible equal sum of three stacks",
@@ -1060,10 +1133,12 @@ const DSA_DATA = [
       {
         name: "Printing all solutions in N-Queen Problem",
         url: "https://www.geeksforgeeks.org/printing-solutions-n-queen-problem/",
+        lcUrl: "https://leetcode.com/problems/n-queens/",
       },
       {
         name: "Word Break Problem using Backtracking",
         url: "https://practice.geeksforgeeks.org/problems/word-break-part-2/0",
+        lcUrl: "https://leetcode.com/problems/word-break-ii/",
       },
       {
         name: "Remove Invalid Parentheses",
@@ -1072,6 +1147,7 @@ const DSA_DATA = [
       {
         name: "Sudoku Solver",
         url: "https://practice.geeksforgeeks.org/problems/solve-the-sudoku/0",
+        lcUrl: "https://leetcode.com/problems/sudoku-solver/",
       },
       {
         name: "m Coloring Problem",
@@ -1080,10 +1156,12 @@ const DSA_DATA = [
       {
         name: "Print all palindromic partitions of a string",
         url: "https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/",
+        lcUrl: "https://leetcode.com/problems/palindrome-partitioning/",
       },
       {
         name: "Subset Sum Problem",
         url: "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
+        lcUrl: "https://leetcode.com/problems/partition-equal-subset-sum/",
       },
       {
         name: "The Knight's tour problem",
@@ -1097,6 +1175,7 @@ const DSA_DATA = [
       {
         name: "Combination Sum",
         url: "https://practice.geeksforgeeks.org/problems/combination-sum/0",
+        lcUrl: "https://leetcode.com/problems/combination-sum/",
       },
       {
         name: "Find Maximum number possible by doing at-most K swaps",
@@ -1105,6 +1184,7 @@ const DSA_DATA = [
       {
         name: "Print all permutations of a string",
         url: "https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0",
+        lcUrl: "https://leetcode.com/problems/permutations/",
       },
       {
         name: "Find if there is a path of more than k length from a source",
@@ -1121,10 +1201,12 @@ const DSA_DATA = [
       {
         name: "Partition of a set into K subsets with equal sum",
         url: "https://practice.geeksforgeeks.org/problems/partition-array-to-k-subsets/1",
+        lcUrl: "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
       },
       {
         name: "Find the K-th Permutation Sequence of first N natural numbers",
         url: "https://www.geeksforgeeks.org/find-the-k-th-permutation-sequence-of-first-n-natural-numbers/",
+        lcUrl: "https://leetcode.com/problems/permutation-sequence/",
       },
     ],
   },
@@ -1155,6 +1237,7 @@ const DSA_DATA = [
       {
         name: "Check valid or balanced parenthesis",
         url: "https://practice.geeksforgeeks.org/problems/parenthesis-checker/0",
+        lcUrl: "https://leetcode.com/problems/valid-parentheses/",
       },
       {
         name: "Reverse a String using Stack",
@@ -1163,10 +1246,12 @@ const DSA_DATA = [
       {
         name: "Design a Stack that supports getMin() in O(1)",
         url: "https://practice.geeksforgeeks.org/problems/special-stack/1",
+        lcUrl: "https://leetcode.com/problems/min-stack/",
       },
       {
         name: "Find the next Greater element",
         url: "https://practice.geeksforgeeks.org/problems/next-larger-element/0",
+        lcUrl: "https://leetcode.com/problems/next-greater-element-i/",
       },
       {
         name: "The Celebrity Problem",
@@ -1195,14 +1280,17 @@ const DSA_DATA = [
       {
         name: "Merge Overlapping Intervals",
         url: "https://practice.geeksforgeeks.org/problems/overlapping-intervals/0",
+        lcUrl: "https://leetcode.com/problems/merge-intervals/",
       },
       {
         name: "Largest rectangular Area in Histogram",
         url: "https://practice.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram/0",
+        lcUrl: "https://leetcode.com/problems/largest-rectangle-in-histogram/",
       },
       {
         name: "Length of the Longest Valid Substring",
         url: "https://practice.geeksforgeeks.org/problems/valid-substring0624/1",
+        lcUrl: "https://leetcode.com/problems/longest-valid-parentheses/",
       },
       {
         name: "Expression contains redundant bracket or not",
@@ -1211,6 +1299,7 @@ const DSA_DATA = [
       {
         name: "Implement Stack using Queue",
         url: "https://practice.geeksforgeeks.org/problems/stack-using-two-queues/1",
+        lcUrl: "https://leetcode.com/problems/implement-stack-using-queues/",
       },
       {
         name: "Implement Stack using Deque",
@@ -1223,6 +1312,7 @@ const DSA_DATA = [
       {
         name: "Implement Queue using Stack",
         url: "https://practice.geeksforgeeks.org/problems/queue-using-two-stacks/1",
+        lcUrl: "https://leetcode.com/problems/implement-queue-using-stacks/",
       },
       {
         name: "Implement N queues in an array",
@@ -1231,10 +1321,12 @@ const DSA_DATA = [
       {
         name: "Implement a Circular queue",
         url: "https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/",
+        lcUrl: "https://leetcode.com/problems/design-circular-queue/",
       },
       {
         name: "LRU Cache Implementation",
         url: "https://practice.geeksforgeeks.org/problems/lru-cache/1",
+        lcUrl: "https://leetcode.com/problems/lru-cache/",
       },
       {
         name: "Reverse a Queue using recursion",
@@ -1251,14 +1343,17 @@ const DSA_DATA = [
       {
         name: "Find the first circular tour that visits all Petrol Pumps",
         url: "https://practice.geeksforgeeks.org/problems/circular-tour/1",
+        lcUrl: "https://leetcode.com/problems/gas-station/",
       },
       {
         name: "Minimum time required to rot all oranges",
         url: "https://practice.geeksforgeeks.org/problems/rotten-oranges/0",
+        lcUrl: "https://leetcode.com/problems/rotting-oranges/",
       },
       {
         name: "Distance of nearest cell having 1 in a binary matrix",
         url: "https://practice.geeksforgeeks.org/problems/distance-of-nearest-cell-having-1/0",
+        lcUrl: "https://leetcode.com/problems/01-matrix/",
       },
       {
         name: "First negative integer in every window of size k",
@@ -1301,6 +1396,7 @@ const DSA_DATA = [
       {
         name: "Maximum of all subarrays of size k",
         url: "https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/",
+        lcUrl: "https://leetcode.com/problems/sliding-window-maximum/",
       },
       {
         name: "K largest elements in an array",
@@ -1309,6 +1405,7 @@ const DSA_DATA = [
       {
         name: "Kth smallest and largest element in an unsorted array",
         url: "https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/",
+        lcUrl: "https://leetcode.com/problems/kth-largest-element-in-an-array/",
       },
       {
         name: "Merge K sorted arrays [IMP]",
@@ -1329,14 +1426,17 @@ const DSA_DATA = [
       {
         name: "Merge K Sorted Linked Lists [V.IMP]",
         url: "https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1",
+        lcUrl: "https://leetcode.com/problems/merge-k-sorted-lists/",
       },
       {
         name: "Smallest range in K Lists",
         url: "https://practice.geeksforgeeks.org/problems/find-smallest-range-containing-elements-from-k-lists/1",
+        lcUrl: "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
       },
       {
         name: "Median in a stream of Integers",
         url: "https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0",
+        lcUrl: "https://leetcode.com/problems/find-median-from-data-stream/",
       },
       {
         name: "Check if a Binary Tree is Heap",
@@ -1357,6 +1457,7 @@ const DSA_DATA = [
       {
         name: "Rearrange characters so no two adjacent are same",
         url: "https://practice.geeksforgeeks.org/problems/rearrange-characters/0",
+        lcUrl: "https://leetcode.com/problems/reorganize-string/",
       },
       {
         name: "Minimum sum of two numbers formed from digits of an array",
@@ -1383,6 +1484,7 @@ const DSA_DATA = [
       {
         name: "Detect Cycle in Directed Graph using BFS/DFS",
         url: "https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1",
+        lcUrl: "https://leetcode.com/problems/course-schedule/",
       },
       {
         name: "Detect Cycle in Undirected Graph using BFS/DFS",
@@ -1419,6 +1521,7 @@ const DSA_DATA = [
       {
         name: "Implement Topological Sort",
         url: "https://practice.geeksforgeeks.org/problems/topological-sort/1",
+        lcUrl: "https://leetcode.com/problems/course-schedule-ii/",
       },
       {
         name: "Minimum time taken by each job (DAG)",
@@ -1427,10 +1530,12 @@ const DSA_DATA = [
       {
         name: "Find whether it is possible to finish all tasks",
         url: "https://www.geeksforgeeks.org/find-whether-it-is-possible-to-finish-all-tasks-or-not-from-given-dependencies/",
+        lcUrl: "https://leetcode.com/problems/course-schedule/",
       },
       {
         name: "Find the number of Islands",
         url: "https://practice.geeksforgeeks.org/problems/find-the-number-of-islands/1",
+        lcUrl: "https://leetcode.com/problems/number-of-islands/",
       },
       {
         name: "Alien Dictionary - find order of characters",
@@ -1479,6 +1584,7 @@ const DSA_DATA = [
       {
         name: "Check whether a graph is Bipartite or Not",
         url: "https://www.geeksforgeeks.org/bipartite-graph/",
+        lcUrl: "https://leetcode.com/problems/is-graph-bipartite/",
       },
       {
         name: "Detect Negative cycle in a graph",
@@ -1549,6 +1655,7 @@ const DSA_DATA = [
       {
         name: "Construct a trie from scratch",
         url: "https://www.geeksforgeeks.org/trie-insert-and-search/",
+        lcUrl: "https://leetcode.com/problems/implement-trie-prefix-tree/",
       },
       {
         name: "Find shortest unique prefix for every word in a given list",
@@ -1579,6 +1686,7 @@ const DSA_DATA = [
       {
         name: "Coin Change Problem",
         url: "https://practice.geeksforgeeks.org/problems/coin-change2448/1",
+        lcUrl: "https://leetcode.com/problems/coin-change-ii/",
       },
       {
         name: "Knapsack Problem",
@@ -1603,10 +1711,12 @@ const DSA_DATA = [
       {
         name: "Edit Distance",
         url: "https://practice.geeksforgeeks.org/problems/edit-distance3702/1",
+        lcUrl: "https://leetcode.com/problems/edit-distance/",
       },
       {
         name: "Subset Sum Problem",
         url: "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
+        lcUrl: "https://leetcode.com/problems/partition-equal-subset-sum/",
       },
       {
         name: "Friends Pairing Problem",
@@ -1631,6 +1741,7 @@ const DSA_DATA = [
       {
         name: "Longest Common Subsequence",
         url: "https://practice.geeksforgeeks.org/problems/longest-common-subsequence/0",
+        lcUrl: "https://leetcode.com/problems/longest-common-subsequence/",
       },
       {
         name: "Longest Repeated Subsequence",
@@ -1639,6 +1750,7 @@ const DSA_DATA = [
       {
         name: "Longest Increasing Subsequence",
         url: "https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0",
+        lcUrl: "https://leetcode.com/problems/longest-increasing-subsequence/",
       },
       {
         name: "Space Optimized Solution of LCS",
@@ -1667,14 +1779,17 @@ const DSA_DATA = [
       {
         name: "Egg Dropping Problem",
         url: "https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle/0",
+        lcUrl: "https://leetcode.com/problems/super-egg-drop/",
       },
       {
         name: "Maximum Length Chain of Pairs",
         url: "https://practice.geeksforgeeks.org/problems/max-length-chain/1",
+        lcUrl: "https://leetcode.com/problems/maximum-length-of-pair-chain/",
       },
       {
         name: "Maximum size square sub-matrix with all 1s",
         url: "https://practice.geeksforgeeks.org/problems/largest-square-formed-in-a-matrix/0",
+        lcUrl: "https://leetcode.com/problems/maximal-square/",
       },
       {
         name: "Maximum sum of pairs with specific difference",
@@ -1683,6 +1798,7 @@ const DSA_DATA = [
       {
         name: "Min Cost Path Problem",
         url: "https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1",
+        lcUrl: "https://leetcode.com/problems/minimum-path-sum/",
       },
       {
         name: "Maximum difference of zeros and ones in binary string",
@@ -1691,6 +1807,7 @@ const DSA_DATA = [
       {
         name: "Minimum number of jumps to reach end",
         url: "https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0",
+        lcUrl: "https://leetcode.com/problems/jump-game-ii/",
       },
       {
         name: "Minimum cost to fill given weight in a bag",
@@ -1715,6 +1832,7 @@ const DSA_DATA = [
       {
         name: "Largest Sum Contiguous Subarray [V.V.V.V IMP]",
         url: "https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0",
+        lcUrl: "https://leetcode.com/problems/maximum-subarray/",
       },
       {
         name: "Smallest sum contiguous subarray",
@@ -1727,6 +1845,7 @@ const DSA_DATA = [
       {
         name: "Word Break Problem",
         url: "https://practice.geeksforgeeks.org/problems/word-break/0",
+        lcUrl: "https://leetcode.com/problems/word-break/",
       },
       {
         name: "Largest Independent Set Problem",
@@ -1735,14 +1854,17 @@ const DSA_DATA = [
       {
         name: "Partition Problem",
         url: "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
+        lcUrl: "https://leetcode.com/problems/partition-equal-subset-sum/",
       },
       {
         name: "Longest Palindromic Subsequence",
         url: "https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12/",
+        lcUrl: "https://leetcode.com/problems/longest-palindromic-subsequence/",
       },
       {
         name: "Count All Palindromic Subsequences in a given String",
         url: "https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1",
+        lcUrl: "https://leetcode.com/problems/count-different-palindromic-subsequences/",
       },
       {
         name: "Longest Palindromic Substring",
@@ -1767,6 +1889,7 @@ const DSA_DATA = [
       {
         name: "Maximum profit by buying and selling a share at most twice [IMP]",
         url: "https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/",
+        lcUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
       },
       {
         name: "Optimal Strategy for a Game",
@@ -1779,6 +1902,7 @@ const DSA_DATA = [
       {
         name: "Palindrome Partitioning Problem",
         url: "https://practice.geeksforgeeks.org/problems/palindromic-patitioning4845/1",
+        lcUrl: "https://leetcode.com/problems/palindrome-partitioning-ii/",
       },
       {
         name: "Word Wrap Problem",
@@ -1807,10 +1931,12 @@ const DSA_DATA = [
       {
         name: "Maximum profit by buying and selling share at most k times",
         url: "https://practice.geeksforgeeks.org/problems/maximum-profit4657/1",
+        lcUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
       },
       {
         name: "Find if a string is interleaved of two other strings",
         url: "https://practice.geeksforgeeks.org/problems/interleaved-strings/1",
+        lcUrl: "https://leetcode.com/problems/interleaving-string/",
       },
       {
         name: "Maximum Length of Pair Chain",
@@ -1825,22 +1951,27 @@ const DSA_DATA = [
       {
         name: "Count set bits in an integer",
         url: "https://practice.geeksforgeeks.org/problems/set-bits0143/1",
+        lcUrl: "https://leetcode.com/problems/number-of-1-bits/",
       },
       {
         name: "Find the two non-repeating elements in an array",
         url: "https://practice.geeksforgeeks.org/problems/finding-the-numbers0215/1",
+        lcUrl: "https://leetcode.com/problems/single-number-iii/",
       },
       {
         name: "Count number of bits to be flipped to convert A to B",
         url: "https://practice.geeksforgeeks.org/problems/bit-difference/0",
+        lcUrl: "https://leetcode.com/problems/hamming-distance/",
       },
       {
         name: "Count total set bits in all numbers from 1 to n",
         url: "https://practice.geeksforgeeks.org/problems/count-total-set-bits/0",
+        lcUrl: "https://leetcode.com/problems/counting-bits/",
       },
       {
         name: "Program to find whether a number is power of two",
         url: "https://practice.geeksforgeeks.org/problems/power-of-2/0",
+        lcUrl: "https://leetcode.com/problems/power-of-two/",
       },
       {
         name: "Find position of the only set bit",
@@ -1853,6 +1984,7 @@ const DSA_DATA = [
       {
         name: "Divide two integers without using *, / and mod",
         url: "https://www.geeksforgeeks.org/divide-two-integers-without-using-multiplication-division-mod-operator/",
+        lcUrl: "https://leetcode.com/problems/divide-two-integers/",
       },
       {
         name: "Calculate square without using *, / and pow()",
@@ -1861,6 +1993,7 @@ const DSA_DATA = [
       {
         name: "Power Set",
         url: "https://practice.geeksforgeeks.org/problems/power-set4302/1",
+        lcUrl: "https://leetcode.com/problems/subsets/",
       },
     ],
   },

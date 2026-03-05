@@ -724,9 +724,7 @@ a:hover {
 
 .q-name a {
   color: inherit;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
+  text-decoration: none;
 }
 
 .q-name a:hover {
@@ -742,6 +740,20 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.3px;
   flex-shrink: 0;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+a.link-badge:hover {
+  opacity: 0.8;
+}
+
+.q-links {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 
 .link-badge.gfg {
