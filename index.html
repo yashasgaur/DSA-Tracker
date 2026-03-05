@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSA Tracker | 450+ Questions</title>
+    <meta
+      name="description"
+      content="Track your DSA preparation progress with 450+ curated questions from Love Babbar's DSA Sheet. Solve problems from GeeksforGeeks, LeetCode, and more."
+    />
+    <meta
+      name="keywords"
+      content="DSA, Data Structures, Algorithms, LeetCode, GeeksforGeeks, Love Babbar, Interview Prep, Coding"
+    />
+    <meta name="author" content="Yashas" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <span class="logo-icon">🚀</span>
+          <h1>DSA <span class="highlight">Tracker</span></h1>
+        </div>
+        <div class="header-actions">
+          <div class="search-wrapper">
+            <svg
+              class="search-icon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search questions..."
+              autocomplete="off"
+            />
+            <kbd class="search-shortcut">Ctrl+K</kbd>
+          </div>
+          <button id="themeToggle" class="icon-btn" title="Toggle theme">
+            <svg
+              class="sun-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg
+              class="moon-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <button
+            id="resetBtn"
+            class="icon-btn danger"
+            title="Reset all progress"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="1 4 1 10 7 10" />
+              <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sheet Selector Tabs -->
+    <section class="sheet-bar">
+      <div class="sheet-content" id="sheetTabs">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+      <div class="stats-content">
+        <div class="stat-card main-stat">
+          <div class="stat-circle">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path
+                class="circle-bg"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+              <path
+                class="circle"
+                id="progressCircle"
+                stroke-dasharray="0, 100"
+                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+            <span class="stat-percent" id="totalPercent">0%</span>
+          </div>
+          <div class="stat-info">
+            <span class="stat-label">Overall Progress</span>
+            <span class="stat-value" id="totalProgress">0 / 450</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-emoji">🔥</span>
+          <div class="stat-info">
+            <span class="stat-value" id="streakCount">0</span>
+            <span class="stat-label">Day Streak</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-emoji">📅</span>
+          <div class="stat-info">
+            <span class="stat-value" id="todayCount">0</span>
+            <span class="stat-label">Today</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-emoji">⭐</span>
+          <div class="stat-info">
+            <span class="stat-value" id="bookmarkCount">0</span>
+            <span class="stat-label">Bookmarked</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+      <div class="filter-content">
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="pending">Pending</button>
+          <button class="filter-tab" data-filter="done">Completed</button>
+          <button class="filter-tab" data-filter="bookmarked">
+            ⭐ Bookmarked
+          </button>
+        </div>
+        <button id="collapseAll" class="text-btn">Collapse All</button>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+      <!-- Topics will be rendered here by JS -->
+    </main>
+
+    <!-- Search Results Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <!-- Notes Modal -->
+    <div class="modal-overlay" id="notesModal">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>📝 Notes</h3>
+          <button class="modal-close" id="closeNotes">&times;</button>
+        </div>
+        <textarea
+          id="notesTextarea"
+          placeholder="Write your notes, approach, time complexity..."
+        ></textarea>
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="saveNotes">Save Notes</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reset Confirmation Modal -->
+    <div class="modal-overlay" id="resetModal">
+      <div class="modal modal-sm">
+        <div class="modal-header">
+          <h3>⚠️ Reset Progress</h3>
+          <button class="modal-close" id="closeReset">&times;</button>
+        </div>
+        <p class="modal-text">
+          This will permanently delete all your progress, notes, and bookmarks.
+          This action cannot be undone.
+        </p>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" id="cancelReset">Cancel</button>
+          <button class="btn btn-danger" id="confirmReset">
+            Reset Everything
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        Built by <strong>Yashas</strong> • Inspired by
+        <a href="https://450dsa.com" target="_blank" rel="noopener"
+          >450dsa.com</a
+        >
+        • Questions by
+        <a
+          href="https://www.youtube.com/channel/UCQHLxxBFrbfdrk1jF0moTpw"
+          target="_blank"
+          rel="noopener"
+          >Love Babbar</a
+        >
+        &amp;
+        <a
+          href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2"
+          target="_blank"
+          rel="noopener"
+          >Striver</a
+        >
+      </p>
+      <p class="footer-sub">
+        Data stored locally in your browser •
+        <a href="https://github.com/yashasgaur" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+
+    <script src="striver_a2z_data_gen.js"></script>
+    <script src="striver_data_gen.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
