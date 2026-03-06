@@ -10,11 +10,11 @@ A modern, feature-rich **DSA (Data Structures & Algorithms) tracker** built with
 
 ## 📋 Sheets Included
 
-| Sheet | Questions | Source |
-| --- | --- | --- |
-| Love Babbar 450 | 450 | [Love Babbar](https://www.youtube.com/channel/UCQHLxxBFrbfdrk1jF0moTpw) |
-| Striver A2Z DSA | 455 | [takeUforward](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/) |
-| Striver SDE Sheet | 191 | [takeUforward](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/) |
+| Sheet             | Questions | Source                                                                                                |
+| ----------------- | --------- | ----------------------------------------------------------------------------------------------------- |
+| Love Babbar 450   | 450       | [Love Babbar](https://www.youtube.com/channel/UCQHLxxBFrbfdrk1jF0moTpw)                               |
+| Striver A2Z DSA   | 455       | [takeUforward](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/)     |
+| Striver SDE Sheet | 191       | [takeUforward](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/) |
 
 ## ✨ Features
 
