@@ -85,6 +85,16 @@
         `<a href="${q.lcUrl}" target="_blank" rel="noopener" class="link-badge lc" onclick="event.stopPropagation()">LC</a>`,
       );
     }
+    if (q.gfgUrl) {
+      badges.push(
+        `<a href="${q.gfgUrl}" target="_blank" rel="noopener" class="link-badge gfg" onclick="event.stopPropagation()">GFG</a>`,
+      );
+    }
+    if (q.tufUrl) {
+      badges.push(
+        `<a href="${q.tufUrl}" target="_blank" rel="noopener" class="link-badge tuf" onclick="event.stopPropagation()">TUF</a>`,
+      );
+    }
     if (badges.length === 0) {
       badges.push(`<span class="link-badge other">Theory</span>`);
     }
