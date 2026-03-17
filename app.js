@@ -57,6 +57,68 @@
     return `${state.activeSheet}-${topicIdx}-${qIdx}`;
   }
 
+  function normalizeText(value = "") {
+    return value.toString().trim().toLowerCase().replace(/\s+/g, " ");
+  }
+
+  function normalizeUrl(url = "") {
+    return normalizeText(url).replace(/\/$/, "");
+  }
+
+  function getQuestionKey(question) {
+    const urlKey = [
+      question.url,
+      question.lcUrl,
+      question.gfgUrl,
+      question.tufUrl,
+    ].find((u) => !!normalizeUrl(u));
+
+    if (urlKey) {
+      return `qk:url:${normalizeUrl(urlKey)}`;
+    }
+
+    return `qk:name:${normalizeText(question.name)}`;
+  }
+
+  function getQuestionKeyByIndex(topicIdx, qIdx, sheetKey = state.activeSheet) {
+    const sheet = SHEETS[sheetKey];
+    if (!sheet) return null;
+    const topic = sheet.data[topicIdx];
+    if (!topic || !topic.questions[qIdx]) return null;
+    return getQuestionKey(topic.questions[qIdx]);
+  }
+
+  function questionIdToKey(qId) {
+    if (!qId) return null;
+    if (qId.startsWith("qk:")) return qId;
+
+    const parts = qId.split("-");
+    if (parts.length !== 3) return qId;
+
+    const [sheetKey, topicIdxStr, qIdxStr] = parts;
+    const topicIdx = Number(topicIdxStr);
+    const qIdx = Number(qIdxStr);
+    if (Number.isNaN(topicIdx) || Number.isNaN(qIdx)) return qId;
+
+    return getQuestionKeyByIndex(topicIdx, qIdx, sheetKey) || qId;
+  }
+
+  function migrateDoneStateIfNeeded() {
+    const migrated = new Set();
+    let changed = false;
+
+    state.done.forEach((id) => {
+      const key = questionIdToKey(id);
+      migrated.add(key);
+      if (key !== id) changed = true;
+    });
+
+    state.done = migrated;
+    if (changed) {
+      save(STORAGE_KEYS.DONE, state.done);
+    }
+  }
+
   function getCurrentData() {
     return SHEETS[state.activeSheet].data;
   }
@@ -191,7 +253,8 @@
     let count = 0;
     data.forEach((topic, tIdx) => {
       topic.questions.forEach((_, qIdx) => {
-        if (state.done.has(`${state.activeSheet}-${tIdx}-${qIdx}`)) count++;
+        const qKey = getQuestionKeyByIndex(tIdx, qIdx);
+        if (qKey && state.done.has(qKey)) count++;
       });
     });
     return count;
@@ -210,8 +273,8 @@
     $("#bookmarkCount").textContent = state.bookmarks.size;
   }
 
-  function shouldShowQuestion(qId) {
-    const isDone = state.done.has(qId);
+  function shouldShowQuestion(qId, qKey) {
+    const isDone = state.done.has(qKey);
     const isBookmarked = state.bookmarks.has(qId);
     switch (state.filter) {
       case "done":
@@ -232,14 +295,18 @@
     getCurrentData().forEach((topic, tIdx) => {
       const questions = topic.questions;
       const filteredQuestions = questions
-        .map((q, qIdx) => ({ ...q, qIdx }))
-        .filter((q) => shouldShowQuestion(getQuestionId(tIdx, q.qIdx)));
+        .map((q, qIdx) => {
+          const qId = getQuestionId(tIdx, qIdx);
+          const qKey = getQuestionKey(q);
+          return { ...q, qIdx, qId, qKey };
+        })
+        .filter((q) => shouldShowQuestion(q.qId, q.qKey));
 
       // If filter hides all questions in this topic, skip
       if (state.filter !== "all" && filteredQuestions.length === 0) return;
 
       const doneTopic = questions.filter((_, qIdx) =>
-        state.done.has(getQuestionId(tIdx, qIdx)),
+        state.done.has(getQuestionKeyByIndex(tIdx, qIdx)),
       ).length;
       const totalTopic = questions.length;
       const percentTopic = Math.round((doneTopic / totalTopic) * 100);
@@ -281,8 +348,8 @@
             <tbody>
               ${filteredQuestions
                 .map((q, displayIdx) => {
-                  const qId = getQuestionId(tIdx, q.qIdx);
-                  const isDone = state.done.has(qId);
+                  const qId = q.qId;
+                  const isDone = state.done.has(q.qKey);
                   const isBookmarked = state.bookmarks.has(qId);
                   const hasNotes = !!state.notes[qId];
                   return `
@@ -353,11 +420,12 @@
 
     switch (action) {
       case "toggle":
-        if (state.done.has(qId)) {
-          state.done.delete(qId);
+        const qKey = questionIdToKey(qId);
+        if (state.done.has(qKey)) {
+          state.done.delete(qKey);
           decrementDaily();
         } else {
-          state.done.add(qId);
+          state.done.add(qKey);
           incrementDaily();
           showToast("✅ Question marked as done!");
         }
@@ -424,7 +492,8 @@
 
     matches.slice(0, 20).forEach((m) => {
       const qId = getQuestionId(m.tIdx, m.qIdx);
-      const isDone = state.done.has(qId);
+      const qKey = getQuestionKeyByIndex(m.tIdx, m.qIdx);
+      const isDone = !!qKey && state.done.has(qKey);
       const item = document.createElement("div");
       item.className = "search-result-item";
       item.innerHTML = `
@@ -494,6 +563,7 @@
   // --- Init ---
   function init() {
     applyTheme();
+    migrateDoneStateIfNeeded();
 
     // Check if streak needs reset (missed a day)
     const today = getTodayStr();

@@ -1,8 +1,3 @@
-// ============================================
-// DSA Tracker - Complete Question Database
-// 450+ Questions from Love Babbar's DSA Sheet
-// ============================================
-
 const DSA_DATA = [
   {
     topic: "Array",
@@ -28,7 +23,7 @@ const DSA_DATA = [
       },
       {
         name: "Move all negative elements to one side of the array",
-        url: "https://www.geeksforgeeks.org/move-negative-numbers-beginning-positive-end-constant-extra-space/",
+        url: "https://www.geeksforgeeks.org/problems/move-all-negative-elements-to-end1813/1",
       },
       {
         name: "Find the Union and Intersection of two sorted arrays",
