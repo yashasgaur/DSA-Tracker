@@ -114,7 +114,8 @@ const DSA_DATA = [
       {
         name: "Maximum profit by buying and selling a share at most twice",
         url: "https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/",
-        lcUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
+        lcUrl:
+          "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
       },
       {
         name: "Find whether an array is a subset of another array",
@@ -203,7 +204,8 @@ const DSA_DATA = [
       {
         name: "Kth smallest element in a row-column wise sorted matrix",
         url: "https://practice.geeksforgeeks.org/problems/kth-element-in-matrix/1",
-        lcUrl: "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/",
+        lcUrl:
+          "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/",
       },
       {
         name: "Common elements in all rows of a given matrix",
@@ -306,7 +308,8 @@ const DSA_DATA = [
       {
         name: "Count All Palindromic Subsequence in a given String",
         url: "https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1",
-        lcUrl: "https://leetcode.com/problems/count-different-palindromic-subsequences/",
+        lcUrl:
+          "https://leetcode.com/problems/count-different-palindromic-subsequences/",
       },
       {
         name: "Count of given string in 2D character array",
@@ -377,7 +380,8 @@ const DSA_DATA = [
       {
         name: "Recursively remove all adjacent duplicates",
         url: "https://practice.geeksforgeeks.org/problems/consecutive-elements/0",
-        lcUrl: "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+        lcUrl:
+          "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
       },
       {
         name: "String matching with wildcard characters",
@@ -410,7 +414,8 @@ const DSA_DATA = [
       {
         name: "Find first and last positions of element in sorted array",
         url: "https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x/0",
-        lcUrl: "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+        lcUrl:
+          "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
       },
       {
         name: "Find a Fixed Point (Value equal to index)",
@@ -582,7 +587,8 @@ const DSA_DATA = [
       {
         name: "Remove Duplicates in a sorted Linked List",
         url: "https://practice.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1",
-        lcUrl: "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
+        lcUrl:
+          "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
       },
       {
         name: "Remove Duplicates in an Un-sorted Linked List",
@@ -608,7 +614,8 @@ const DSA_DATA = [
       {
         name: "Intersection Point of two Linked Lists",
         url: "https://practice.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1",
-        lcUrl: "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+        lcUrl:
+          "https://leetcode.com/problems/intersection-of-two-linked-lists/",
       },
       {
         name: "Merge Sort for Linked Lists [V. Important]",
@@ -717,12 +724,14 @@ const DSA_DATA = [
       {
         name: "Level order traversal",
         url: "https://practice.geeksforgeeks.org/problems/level-order-traversal/1",
-        lcUrl: "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        lcUrl:
+          "https://leetcode.com/problems/binary-tree-level-order-traversal/",
       },
       {
         name: "Reverse Level Order traversal",
         url: "https://practice.geeksforgeeks.org/problems/reverse-level-order-traversal/1",
-        lcUrl: "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/",
+        lcUrl:
+          "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/",
       },
       {
         name: "Height of a tree",
@@ -771,7 +780,8 @@ const DSA_DATA = [
       {
         name: "Zig-Zag traversal of a binary tree",
         url: "https://practice.geeksforgeeks.org/problems/zigzag-tree-traversal/1",
-        lcUrl: "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+        lcUrl:
+          "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
       },
       {
         name: "Check if a tree is balanced or not",
@@ -801,7 +811,8 @@ const DSA_DATA = [
       {
         name: "Construct Binary tree from Inorder and Preorder traversal",
         url: "https://practice.geeksforgeeks.org/problems/construct-tree-1/1",
-        lcUrl: "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+        lcUrl:
+          "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
       },
       {
         name: "Find minimum swaps to convert Binary tree into BST",
@@ -849,7 +860,8 @@ const DSA_DATA = [
       {
         name: "Find LCA in a Binary tree",
         url: "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1",
-        lcUrl: "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+        lcUrl:
+          "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
       },
       {
         name: "Find distance between 2 nodes in a Binary tree",
@@ -903,12 +915,14 @@ const DSA_DATA = [
       {
         name: "Find LCA of 2 nodes in a BST",
         url: "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1",
-        lcUrl: "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        lcUrl:
+          "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
       },
       {
         name: "Construct BST from preorder traversal",
         url: "https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversa/",
-        lcUrl: "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
+        lcUrl:
+          "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
       },
       {
         name: "Convert Binary tree into BST",
@@ -1196,7 +1210,8 @@ const DSA_DATA = [
       {
         name: "Partition of a set into K subsets with equal sum",
         url: "https://practice.geeksforgeeks.org/problems/partition-array-to-k-subsets/1",
-        lcUrl: "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
+        lcUrl:
+          "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
       },
       {
         name: "Find the K-th Permutation Sequence of first N natural numbers",
@@ -1426,7 +1441,8 @@ const DSA_DATA = [
       {
         name: "Smallest range in K Lists",
         url: "https://practice.geeksforgeeks.org/problems/find-smallest-range-containing-elements-from-k-lists/1",
-        lcUrl: "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
+        lcUrl:
+          "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
       },
       {
         name: "Median in a stream of Integers",
@@ -1859,7 +1875,8 @@ const DSA_DATA = [
       {
         name: "Count All Palindromic Subsequences in a given String",
         url: "https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1",
-        lcUrl: "https://leetcode.com/problems/count-different-palindromic-subsequences/",
+        lcUrl:
+          "https://leetcode.com/problems/count-different-palindromic-subsequences/",
       },
       {
         name: "Longest Palindromic Substring",
@@ -1884,7 +1901,8 @@ const DSA_DATA = [
       {
         name: "Maximum profit by buying and selling a share at most twice [IMP]",
         url: "https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/",
-        lcUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
+        lcUrl:
+          "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
       },
       {
         name: "Optimal Strategy for a Game",
@@ -1926,7 +1944,8 @@ const DSA_DATA = [
       {
         name: "Maximum profit by buying and selling share at most k times",
         url: "https://practice.geeksforgeeks.org/problems/maximum-profit4657/1",
-        lcUrl: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+        lcUrl:
+          "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
       },
       {
         name: "Find if a string is interleaved of two other strings",
@@ -2018,5 +2037,12 @@ const SHEETS = {
     icon: "💻",
     description: "191 must-do problems for SDE interviews by Striver",
     data: STRIVER_SDE_DATA,
+  },
+  kunalAssignments: {
+    name: "Kunal Kushwaha Assignments",
+    short: "Kunal Assignments",
+    icon: "🧠",
+    description: "601 assignment problems from Kunal Kushwaha's DSA Bootcamp",
+    data: KUNAL_ASSIGNMENTS_DATA,
   },
 };
