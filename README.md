@@ -28,6 +28,7 @@ A modern, feature-rich **DSA (Data Structures & Algorithms) tracker** built with
 - **Filter** by All / Pending / Completed / Bookmarked
 - **Bookmarks** to flag important problems for revision
 - **Notes** per question — jot down approaches, time complexity, etc.
+- **Local backup export/import** — download or restore your progress as a JSON file
 - **Streak counter** — tracks consecutive days of practice
 - **Daily solved count** — see how many you did today
 - **Responsive design** — works on desktop, tablet, and mobile
@@ -56,6 +57,7 @@ xdg-open index.html   # Linux
 - **CSS3** — custom properties, flexbox, grid, animations
 - **Vanilla JavaScript** — no frameworks, no dependencies
 - **localStorage** — client-side persistence
+- **JSON backup files** — manual export/import for offline restore
 
 ## 📁 Project Structure
 

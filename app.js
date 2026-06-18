@@ -18,6 +18,8 @@
     ACTIVE_SHEET: "dsa_active_sheet",
   };
 
+  const BACKUP_VERSION = 1;
+
   // --- State ---
   let state = {
     done: new Set(JSON.parse(localStorage.getItem(STORAGE_KEYS.DONE) || "[]")),
@@ -51,6 +53,87 @@
         typeof value === "string" ? value : JSON.stringify(value),
       );
     }
+  }
+
+  function persistState() {
+    save(STORAGE_KEYS.DONE, state.done);
+    save(STORAGE_KEYS.BOOKMARKS, state.bookmarks);
+    save(STORAGE_KEYS.NOTES, state.notes);
+    save(STORAGE_KEYS.THEME, state.theme);
+    save(STORAGE_KEYS.STREAK, state.streak.toString());
+    save(STORAGE_KEYS.LAST_DATE, state.lastDate);
+    save(STORAGE_KEYS.DAILY_LOG, state.dailyLog);
+    save(STORAGE_KEYS.OPEN_TOPICS, state.openTopics);
+    save(STORAGE_KEYS.ACTIVE_SHEET, state.activeSheet);
+  }
+
+  function buildBackupPayload() {
+    return {
+      version: BACKUP_VERSION,
+      exportedAt: new Date().toISOString(),
+      done: [...state.done],
+      bookmarks: [...state.bookmarks],
+      notes: state.notes,
+      theme: state.theme,
+      streak: state.streak,
+      lastDate: state.lastDate,
+      dailyLog: state.dailyLog,
+      openTopics: [...state.openTopics],
+      activeSheet: state.activeSheet,
+    };
+  }
+
+  function downloadBackup() {
+    const payload = buildBackupPayload();
+    const blob = new Blob([JSON.stringify(payload, null, 2)], {
+      type: "application/json",
+    });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    const stamp = new Date().toISOString().slice(0, 10);
+
+    link.href = url;
+    link.download = `dsa-tracker-backup-${stamp}.json`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+    showToast("💾 Backup downloaded.");
+  }
+
+  function normalizeBackupSet(value) {
+    return new Set(Array.isArray(value) ? value : []);
+  }
+
+  function importBackup(payload) {
+    if (!payload || typeof payload !== "object") {
+      throw new Error("Invalid backup file.");
+    }
+
+    state.done = normalizeBackupSet(payload.done);
+    state.bookmarks = normalizeBackupSet(payload.bookmarks);
+    state.notes =
+      payload.notes && typeof payload.notes === "object" ? payload.notes : {};
+    state.theme = payload.theme === "light" ? "light" : "dark";
+    state.streak = Number.isFinite(payload.streak) ? payload.streak : 0;
+    state.lastDate =
+      typeof payload.lastDate === "string" ? payload.lastDate : "";
+    state.dailyLog =
+      payload.dailyLog && typeof payload.dailyLog === "object"
+        ? payload.dailyLog
+        : {};
+    state.openTopics = normalizeBackupSet(payload.openTopics);
+    state.activeSheet = SHEETS[payload.activeSheet]
+      ? payload.activeSheet
+      : Object.keys(SHEETS)[0];
+
+    persistState();
+    migrateDoneStateIfNeeded();
+    applyTheme();
+    renderSheetTabs();
+    renderStats();
+    renderTopics();
+    showToast("📂 Backup restored.");
   }
 
   function getQuestionId(topicIdx, qIdx) {
@@ -620,6 +703,28 @@
     document
       .querySelector(".filter-tabs")
       .addEventListener("click", handleFilter);
+
+    // Local backup controls
+    $("#exportBtn").addEventListener("click", downloadBackup);
+
+    $("#importBtn").addEventListener("click", () => {
+      $("#backupInput").click();
+    });
+
+    $("#backupInput").addEventListener("change", async (e) => {
+      const file = e.target.files && e.target.files[0];
+      e.target.value = "";
+
+      if (!file) return;
+
+      try {
+        const text = await file.text();
+        importBackup(JSON.parse(text));
+      } catch (error) {
+        console.error(error);
+        showToast("⚠️ Could not restore that backup file.");
+      }
+    });
 
     // Collapse all
     $("#collapseAll").addEventListener("click", () => {

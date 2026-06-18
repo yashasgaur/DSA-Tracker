@@ -28,6 +28,42 @@
           <h1>DSA <span class="highlight">Tracker</span></h1>
         </div>
         <div class="header-actions">
+          <button
+            id="exportBtn"
+            class="icon-btn"
+            title="Download progress backup"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </button>
+          <button
+            id="importBtn"
+            class="icon-btn"
+            title="Restore progress backup"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="17 14 12 9 7 14" />
+              <line x1="12" y1="9" x2="12" y2="21" />
+            </svg>
+          </button>
           <div class="search-wrapper">
             <svg
               class="search-icon"
@@ -248,6 +284,13 @@
         >
       </p>
     </footer>
+
+    <input
+      id="backupInput"
+      type="file"
+      accept="application/json,.json"
+      hidden
+    />
 
     <script src="striver_a2z_data_gen.js"></script>
     <script src="striver_data_gen.js"></script>
